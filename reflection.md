@@ -8,6 +8,15 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+1. Dropdown for Developer Debug was viewable for players
+
+2. After you win, you can't start a new game, even when you press "New Game"
+
+3. Starting new game ignores selected difficulty range. New Game handler always uses a range of 1-100.
+
+4. The Normal difficulty has a larger range than Hard
+
+5. The default difficulty is "Hard"
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -16,6 +25,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+I used Claude Code
 ---
 
 ## 3. Debugging and testing your fixes
