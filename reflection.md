@@ -29,7 +29,7 @@ I used Claude Code to help me debug issues with the code and refaqctor the logic
 
 One issue it suggested to fix was how New Game button hardcoded the difficulty, without taking into account the selected difficulty.
 
-I didn't actually think it gave me any wrong suggestions. I gave as much context I could (e.g. the README to prevent Claude Code from hallucinating)
+When I was asking Claude Code to fix the README markdown to be consistent, it removed the checkboxes.
 ---
 
 ## 3. Debugging and testing your fixes
@@ -66,4 +66,4 @@ One habit I will take forward is to always read through what the agent worked on
 
 Whenever I prompt, I will use plan mode to collaborate on a solution before executing the fix.
 
-This project helped see AI, especially coding agents as not only a research assistant but also a partner in the process of coding.
+This project helped me see AI, especially coding agents, as not only a research assistant but also a partner in the process of coding.

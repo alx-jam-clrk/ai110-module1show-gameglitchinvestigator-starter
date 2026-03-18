@@ -19,30 +19,32 @@ It wrote the code, ran away, and now the game is unplayable.
 1. **Play the game.** Open the "Developer Debug Info" tab in the app to see the secret number. Try to win.
 2. **Find the State Bug.** Why does the secret number change every time you click "Submit"? Ask ChatGPT: *"How do I keep a variable from resetting in Streamlit when I click a button?"*
 3. **Fix the Logic.** The hints ("Higher/Lower") are wrong. Fix them.
-4. **Refactor & Test.** - Move the logic into `logic_utils.py`.
+4. **Refactor & Test.**
+   - Move the logic into `logic_utils.py`.
    - Run `pytest` in your terminal.
    - Keep fixing until all tests pass!
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-The game is number guessing game that hints whether you are above or below the secret number. You can also select the difficulty.
+- [x] Describe the game's purpose.
 
-- [ ] Detail which bugs you found.
-Some of the bugs I found:
-   - new game doesn't work
-   - hints were incorrect
-   - secret number changes on interaction
+The game is a number guessing game that hints whether you are above or below the secret number. You can also select the difficulty.
 
-- [ ] Explain what fixes you applied.
-To fix these problems:
-   - Correctly reset game by updating attempts, secret, status, history, and score
-   - fixed hint logic and created tests to test to automate verification
-   - used an if statement to check if secret number already in session to prevent inadvertant regeneration
+- [x] Detail which bugs you found.
+
+- New game button didn't work
+- Hints were incorrect
+- Secret number changes on interaction
+
+- [x] Explain what fixes you applied.
+
+- Correctly reset game by updating attempts, secret, status, history, and score
+- Fixed hint logic and created tests to automate verification
+- Used an `if` statement to check if secret number already in session to prevent inadvertent regeneration
+
 ## 📸 Demo
 
-- [ ] ![alt text](image.png)
-
+![alt text](image.png)
 
 ## 🚀 Stretch Features
 
