@@ -25,8 +25,10 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-I used Claude Code to help me debug issues with the code and refactor the logic. I was also having a lot of problems with setup, so I also used to work those issues too.
+I used Claude Code to help me debug issues with the code and refaqctor the logic. I was also having a lot of problems with setup, so I also used to work those issues too.
+
 One issue it suggested to fix was how New Game button hardcoded the difficulty, without taking into account the selected difficulty.
+
 I didn't actually think it gave me any wrong suggestions. I gave as much context I could (e.g. the README to prevent Claude Code from hallucinating)
 ---
 
@@ -38,14 +40,18 @@ I didn't actually think it gave me any wrong suggestions. I gave as much context
 - Did AI help you design or understand any tests? How?
 
 To test whether the bug was really fixed to verify directly with the app and also the pytest module.
-I ran the 
+
+I ran the pytest functions to test whether the hints are working correctly
+
 When I ran the tests, it helped me realize that the output format of the tests was of the test was causing all the tests to fail.
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
 Every time the user interacts with the Streamlit app, the session state would reset by rerunning the entire script. This would also cause it to regenerate the secret number.
+
 Its basically like a page refreshing every single time you press a button on the webpage.
+
 I guarded the secret number with an if statement that checks whether or not the secret number is in session state. If not, it will regenerate.
 ---
 
@@ -57,6 +63,7 @@ I guarded the secret number with an if statement that checks whether or not the 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
 
 One habit I will take forward is to always read through what the agent worked on and to always ask questions so that I personally understand. Never outsource my understanding.
-Whenever I prompt, I will use plan mode to collaborate on a solution before executing the fix.
-This project helped see AI, especially coding agents as not only a research assistant but also a partner in the process of coding.
 
+Whenever I prompt, I will use plan mode to collaborate on a solution before executing the fix.
+
+This project helped see AI, especially coding agents as not only a research assistant but also a partner in the process of coding.
