@@ -6,7 +6,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+  (for example: "the hints were backwards").
 
 1. Dropdown for Developer Debug was viewable for players
 
@@ -42,9 +42,7 @@ I ran the
 When I ran the tests, it helped me realize that the output format of the tests was of the test was causing all the tests to fail.
 ## 4. What did you learn about Streamlit and state?
 
-- In your own words, explain why the secret number kept changing in the original app.
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-- What change did you make that finally gave the game a stable secret number?
 
 Every time the user interacts with the Streamlit app, the session state would reset by rerunning the entire script. This would also cause it to regenerate the secret number.
 Its basically like a page refreshing every single time you press a button on the webpage.
