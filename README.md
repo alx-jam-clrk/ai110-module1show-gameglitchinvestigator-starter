@@ -26,12 +26,23 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+The game is number guessing game that hints whether you are above or below the secret number. You can also select the difficulty.
 
+- [ ] Detail which bugs you found.
+Some of the bugs I found:
+   - new game doesn't work
+   - hints were incorrect
+   - secret number changes on interaction
+
+- [ ] Explain what fixes you applied.
+To fix these problems:
+   - Correctly reset game by updating attempts, secret, status, history, and score
+   - fixed hint logic and created tests to test to automate verification
+   - used an if statement to check if secret number already in session to prevent inadvertant regeneration
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] ![alt text](image.png)
+
 
 ## 🚀 Stretch Features
 
