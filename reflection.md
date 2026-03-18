@@ -9,14 +9,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the hints were backwards").
 
 1. Dropdown for Developer Debug was viewable for players
-
 2. After you win, you can't start a new game, even when you press "New Game"
-
 3. Starting new game ignores selected difficulty range. New Game handler always uses a range of 1-100.
-
 4. The Normal difficulty has a larger range than Hard
-
 5. The default difficulty is "Hard"
+
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -25,34 +22,38 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
-I used Claude Code to help me debug issues with the code and refaqctor the logic. I was also having a lot of problems with setup, so I also used to work those issues too.
+I used Claude Code to help me debug issues with the code and refactor the logic. I was also having a lot of problems with setup, so I also used it to work through those issues too.
 
-One issue it suggested to fix was how New Game button hardcoded the difficulty, without taking into account the selected difficulty.
+One issue it suggested to fix was how the New Game button hardcoded the difficulty, without taking into account the selected difficulty.
 
 When I was asking Claude Code to fix the README markdown to be consistent, it removed the checkboxes.
+
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
-To test whether the bug was really fixed to verify directly with the app and also the pytest module.
+To test whether a bug was really fixed, I verified directly with the app and also used the pytest module.
 
-I ran the pytest functions to test whether the hints are working correctly
+I ran the pytest functions to test whether the hints are working correctly.
 
-When I ran the tests, it helped me realize that the output format of the tests was of the test was causing all the tests to fail.
+When I ran the tests, it helped me realize that the output format of the function was causing all the tests to fail.
+
+---
+
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
 Every time the user interacts with the Streamlit app, the session state would reset by rerunning the entire script. This would also cause it to regenerate the secret number.
 
-Its basically like a page refreshing every single time you press a button on the webpage.
+It's basically like a page refreshing every single time you press a button on the webpage.
 
 I guarded the secret number with an if statement that checks whether or not the secret number is in session state. If not, it will regenerate.
+
 ---
 
 ## 5. Looking ahead: your developer habits
